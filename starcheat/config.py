@@ -16,6 +16,8 @@ ini_file = os.path.join(config_folder, "starcheat.ini")
 # TODO: we can do some auto-detection here
 assets_folder = ""
 player_folder = ""
+# I need some GUI handling with this variable, right now it's just manual
+mod_assets_folder = ""
 
 backup_folder = os.path.join(config_folder, "backups")
 make_backups = "no"
@@ -45,7 +47,8 @@ class Config():
             "backup_folder": backup_folder,
             "assets_db": assets_db,
             "make_backups": make_backups,
-            "update_timestamps": update_timestamps
+            "update_timestamps": update_timestamps,
+            "mod_assets_folder": mod_assets_folder
         }
 
         if os.path.isdir(config_folder) == False:

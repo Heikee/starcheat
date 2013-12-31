@@ -146,12 +146,20 @@ class Items():
         self.objects_folder = os.path.join(self.assets_folder, "objects")
         self.tech_folder = os.path.join(self.assets_folder, "tech")
         self.ignore_items = ".*\.(png|config|frames|coinitem)"
+        self.mod_assets_folder = config.Config().read()["mod_assets_folder"]
+        self.mod_items_folder = os.path.join(self.mod_assets_folder, "items")
         self.db = AssetsDb().db
 
     def file_index(self):
         """Return a list of every indexable Starbound item asset."""
         index = []
         # regular items
+        for root, dirs, files in os.walk(self.items_folder):
+            for f in files:
+                # don't care about png and config and all that
+                if re.match(self.ignore_items, f) == None:
+                    index.append((f, root))
+        #mod items
         for root, dirs, files in os.walk(self.items_folder):
             for f in files:
                 # don't care about png and config and all that

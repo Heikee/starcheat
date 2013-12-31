@@ -1,10 +1,16 @@
-# starcheat
+# Starcheat
 
 Starbound player save editor, you can get free pixels with this (omg)
 
+##Features
+- Edit your name, gender, description, and pixels
+- Modify your health, energy, hunger, warmth and breath
+- Change your available recipes
+- Edit your inventory and the count of a item
+
 *If you are looking for prebuilt Mac OSX and Windows builds, check the Starbound community link below*
 
-- mod db: http://community.playstarbound.com/index.php?resources/starcheat.699/
+- Starbound community page: http://community.playstarbound.com/index.php?resources/starcheat.699/
 
 ![woohoo](https://raw.github.com/wizzomafizzo/starcheat/master/screen.png)
 

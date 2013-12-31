@@ -248,7 +248,7 @@ class MainWindow():
             return
 
         self.update()
-        self.window.setWindowTitle("starcheat - " + os.path.basename(self.player.filename))
+        self.window.setWindowTitle("Starcheat - " + os.path.basename(self.player.filename))
         self.ui.statusbar.showMessage("Opened " + self.player.filename, 3000)
 
     def get_bag(self, name):
